@@ -13,7 +13,7 @@
         android:layout_height="50dp"
         android:layout_marginStart="65dp"
         android:layout_marginTop="24dp"
-        android:background="@drawable/ic_launcher_background"
+        android:background="@drawable/custom_button"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         tools:ignore="MissingConstraints" />
@@ -24,8 +24,10 @@
         android:layout_height="80dp"
         app:layout_constraintBottom_toBottomOf="@+id/view2"
         app:layout_constraintEnd_toEndOf="@+id/view2"
+        app:layout_constraintHorizontal_bias="0.47"
         app:layout_constraintStart_toStartOf="@+id/view2"
         app:layout_constraintTop_toTopOf="@+id/view2"
+        app:layout_constraintVertical_bias="0.533"
         app:srcCompat="@drawable/ic_launcher_foreground"
         app:tint="@color/white" />
 
@@ -40,7 +42,7 @@
         android:textSize="24sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.107"
+        app:layout_constraintHorizontal_bias="0.245"
         app:layout_constraintStart_toEndOf="@+id/view2"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -56,13 +58,15 @@
 
     <View
         android:id="@+id/viewLogin"
-        android:layout_width="300dp"
-        android:layout_height="330dp"
+        android:layout_width="295dp"
+        android:layout_height="296dp"
         android:layout_marginTop="36dp"
         android:background="@drawable/custom_button_white"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView4"
+        app:layout_constraintVertical_bias="0.0"
         tools:ignore="MissingConstraints" />
 
     <LinearLayout
@@ -81,7 +85,7 @@
         android:layout_width="248dp"
         android:layout_height="132dp"
         android:orientation="vertical"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toBottomOf="@id/cbGhiNho"
         app:layout_constraintEnd_toEndOf="@id/viewLogin"
         app:layout_constraintStart_toStartOf="@id/viewLogin"
         app:layout_constraintTop_toTopOf="@id/layoutDangNhap"
@@ -165,18 +169,19 @@
         app:layout_constraintTop_toBottomOf="@+id/layoutNhap" />
 
     <Button
-        android:id="@+id/btnDangNhapTC"
+        android:id="@+id/btnDangNhap"
         android:layout_width="250dp"
         android:layout_height="40dp"
         android:layout_marginTop="16dp"
         android:background="@drawable/custom_button"
         android:text="Đăng nhập"
         app:backgroundTint="@null"
+        app:layout_constraintBottom_toBottomOf="@+id/viewLogin"
         app:layout_constraintEnd_toEndOf="@+id/viewLogin"
         app:layout_constraintHorizontal_bias="0.479"
         app:layout_constraintStart_toStartOf="@+id/viewLogin"
         app:layout_constraintTop_toBottomOf="@+id/cbGhiNho"
-        tools:ignore="MissingConstraints" />
+        app:layout_constraintVertical_bias="0.2" />
 
     <LinearLayout
         android:id="@+id/layoutKhac"
@@ -185,9 +190,11 @@
         android:layout_marginTop="16dp"
         android:gravity="center"
         android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="@id/layoutVoi"
         app:layout_constraintEnd_toEndOf="@+id/viewLogin"
         app:layout_constraintStart_toStartOf="@+id/viewLogin"
-        app:layout_constraintTop_toBottomOf="@id/viewLogin">
+        app:layout_constraintTop_toBottomOf="@id/viewLogin"
+        app:layout_constraintVertical_bias="0.1">
 
         <View
             android:layout_width="0dp"
@@ -216,11 +223,13 @@
         android:id="@+id/layoutVoi"
         android:layout_width="300dp"
         android:layout_height="40dp"
-        android:layout_marginTop="32dp"
+        android:layout_marginTop="16dp"
         android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="@id/layoutKhac"
         app:layout_constraintStart_toStartOf="@id/layoutKhac"
-        app:layout_constraintTop_toTopOf="@id/layoutKhac">
+        app:layout_constraintTop_toTopOf="@id/layoutKhac"
+        app:layout_constraintVertical_bias="0.3">
 
         <Button
             android:id="@+id/btnGoogle"
@@ -247,13 +256,13 @@
             android:layout_weight="1"
             android:background="@drawable/custom_button_white"
             android:gravity="center"
-            app:icon="@drawable/ic_facebook"
             android:paddingStart="30dp"
-            app:iconPadding="5dp"
-            app:iconTint="@null"
             android:text="Facebook"
             android:textColor="@color/black"
-            app:backgroundTint="@null" />
+            app:backgroundTint="@null"
+            app:icon="@drawable/ic_facebook"
+            app:iconPadding="5dp"
+            app:iconTint="@null" />
     </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
