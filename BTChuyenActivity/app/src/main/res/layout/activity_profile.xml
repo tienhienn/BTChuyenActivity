@@ -23,7 +23,7 @@
         app:srcCompat="@drawable/arrow" />
 
     <ImageView
-        android:id="@+id/imgSetting"
+        android:id="@+id/btnSetting"
         android:layout_width="35dp"
         android:layout_height="35dp"
         android:layout_margin="20dp"

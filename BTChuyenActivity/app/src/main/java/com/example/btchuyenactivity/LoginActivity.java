@@ -18,8 +18,8 @@ public class LoginActivity extends AppCompatActivity {
     Button btnDangNhap;
     EditText edtTaiKhoan, edtMatKhau;
 
-    private final String userNameDefault = "admin";
-    private final String passwordDefault = "12345";
+    private final String userNameDefault = "tienhien2410";
+    private final String passwordDefault = "huynhletienhien";
 
     @SuppressLint("MissingInflatedId")
     @Override
