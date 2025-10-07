@@ -8,10 +8,6 @@
     android:background="@drawable/custom_background"
     tools:context=".ProfileActivity">
 
-    <!-- Nút bánh răng -->
-
-    <!-- Logo app -->
-
     <ImageView
         android:id="@+id/imageView3"
         android:layout_width="40dp"
@@ -73,7 +69,6 @@
         app:layout_constraintStart_toEndOf="@id/viewLogo"
         app:layout_constraintTop_toTopOf="@id/viewLogo" />
 
-    <!-- Khung trắng hiển thị thông tin -->
     <LinearLayout
         android:id="@+id/layoutInfo"
         android:layout_width="300dp"

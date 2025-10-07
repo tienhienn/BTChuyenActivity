@@ -129,7 +129,7 @@
             android:layout_height="40dp"
             android:background="@drawable/custom_edittext"
             android:drawableStart="@drawable/ic_lock"
-            android:drawableEnd="@drawable/ic_eye"
+            android:drawableEnd="@drawable/ic_eye_off"
             android:drawablePadding="8px"
             android:ems="10"
             android:hint="Nhập mật khẩu"
